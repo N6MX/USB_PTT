@@ -1,0 +1,5 @@
+# UDEV Rules for KK6OTK USB_PTT
+# /etc/udev/rules.d/99-usb_ptt.rules    (preferred location)
+
+SUBSYSTEM=="tty", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="05dc", ATTRS{serial}=="0",
+GROUP="dialout"
